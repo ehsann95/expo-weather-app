@@ -1663,6 +1663,10 @@
     sudo-prompt "^9.0.0"
     wcwidth "^1.0.1"
 
+"@react-native-picker/picker@react-native-picker/picker":
+  version "1.9.10"
+  resolved "https://codeload.github.com/react-native-picker/picker/tar.gz/f0e3f47eff4315dfb51a5c64b7f816acdccc5d50"
+
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.3.tgz#4ba8ddb720221f432e443bd5f9117fd22cfd4762"
