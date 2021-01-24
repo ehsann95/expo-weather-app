@@ -14,7 +14,7 @@ const Weatherinfo = ({ currentWeather }) => {
   const iconUrl = `https://openweathermap.org/img/wn/${icon}@4x.png`;
   return (
     <View style={styles.weatherInfo}>
-      <Text>{name}</Text>
+      <Text style={{ ...styles.textSecondary, fontSize: 24 }}>{name}</Text>
       <Image style={styles.weatherIcon} source={{ uri: iconUrl }} />
       <Text style={styles.textPrimary}>{temp}°</Text>
       <Text style={styles.weatherDesc}>{description}</Text>
@@ -31,12 +31,13 @@ const styles = StyleSheet.create({
     textTransform: "capitalize",
   },
   weatherIcon: {
-    width: 100,
-    height: 100,
+    width: 120,
+    height: 120,
   },
   textPrimary: {
     fontSize: 40,
     color: PRIMARY_COLOR,
+    marginBottom: 20,
   },
   textSecondary: {
     fontSize: 20,

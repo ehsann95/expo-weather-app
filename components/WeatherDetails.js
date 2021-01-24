@@ -53,7 +53,13 @@ export default function WeatherDetails({ currentWeather, unitSystem }) {
         </View>
       </View>
 
-      <View style={styles.weatherDetailsRow}>
+      <View
+        style={{
+          ...styles.weatherDetailsRow,
+          borderTopWidth: 1,
+          borderTopColor: BORDER_COLOR,
+        }}
+      >
         <View
           style={{
             ...styles.weatherDetailsBox,
@@ -61,13 +67,7 @@ export default function WeatherDetails({ currentWeather, unitSystem }) {
             borderRightColor: BORDER_COLOR,
           }}
         >
-          <View
-            style={{
-              ...styles.weatherDetailsRow,
-              borderTopWidth: 1,
-              borderTopColor: BORDER_COLOR,
-            }}
-          >
+          <View style={styles.weatherDetailsRow}>
             <MaterialCommunityIcons
               name="weather-windy"
               size={30}
